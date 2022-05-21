@@ -19,6 +19,7 @@
 		C68557452838C7B400594C6F /* DeviceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557442838C7B400594C6F /* DeviceConfig.swift */; };
 		C68557472838C85A00594C6F /* LabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557462838C85A00594C6F /* LabelExtension.swift */; };
 		C68557492838C90900594C6F /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557482838C90900594C6F /* TextFieldExtension.swift */; };
+		C685574B2838CCAE00594C6F /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C685574A2838CCAE00594C6F /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		C68557442838C7B400594C6F /* DeviceConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceConfig.swift; sourceTree = "<group>"; };
 		C68557462838C85A00594C6F /* LabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelExtension.swift; sourceTree = "<group>"; };
 		C68557482838C90900594C6F /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
+		C685574A2838CCAE00594C6F /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		C685574D2838CD1800594C6F /* RIDIBatang.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RIDIBatang.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,7 @@
 		C68557382838C58600594C6F /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				C685574C2838CD0000594C6F /* Fonts */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -99,6 +103,7 @@
 		C685573A2838C5A100594C6F /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				C685574A2838CCAE00594C6F /* StartViewController.swift */,
 				C68557252838C03200594C6F /* MainViewController.swift */,
 			);
 			path = ViewController;
@@ -139,6 +144,14 @@
 				C68557272838C03200594C6F /* Main.storyboard */,
 			);
 			path = Stroryboard;
+			sourceTree = "<group>";
+		};
+		C685574C2838CD0000594C6F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C685574D2838CD1800594C6F /* RIDIBatang.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +230,7 @@
 				C68557452838C7B400594C6F /* DeviceConfig.swift in Sources */,
 				C68557262838C03200594C6F /* MainViewController.swift in Sources */,
 				C68557432838C74F00594C6F /* VCExtension.swift in Sources */,
+				C685574B2838CCAE00594C6F /* StartViewController.swift in Sources */,
 				C68557472838C85A00594C6F /* LabelExtension.swift in Sources */,
 				C68557222838C03200594C6F /* AppDelegate.swift in Sources */,
 				C685572C2838C03200594C6F /* paperAirplane.xcdatamodeld in Sources */,
