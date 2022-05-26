@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C61697DB283F8E6400640755 /* CustomAlertViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61697DA283F8E6400640755 /* CustomAlertViewController.storyboard */; };
+		C61697DD283F8E7800640755 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61697DC283F8E7800640755 /* CustomAlertViewController.swift */; };
 		C68557222838C03200594C6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557212838C03200594C6F /* AppDelegate.swift */; };
 		C68557242838C03200594C6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557232838C03200594C6F /* SceneDelegate.swift */; };
 		C68557262838C03200594C6F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557252838C03200594C6F /* MainViewController.swift */; };
@@ -15,14 +17,16 @@
 		C685572E2838C03500594C6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C685572D2838C03500594C6F /* Assets.xcassets */; };
 		C68557312838C03600594C6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C685572F2838C03600594C6F /* LaunchScreen.storyboard */; };
 		C68557402838C61D00594C6F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C685573F2838C61D00594C6F /* Constants.swift */; };
-		C68557432838C74F00594C6F /* VCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557422838C74F00594C6F /* VCExtension.swift */; };
+		C68557432838C74F00594C6F /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557422838C74F00594C6F /* CustomAlert.swift */; };
 		C68557452838C7B400594C6F /* DeviceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557442838C7B400594C6F /* DeviceConfig.swift */; };
-		C68557472838C85A00594C6F /* LabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557462838C85A00594C6F /* LabelExtension.swift */; };
-		C68557492838C90900594C6F /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557482838C90900594C6F /* TextFieldExtension.swift */; };
+		C68557472838C85A00594C6F /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557462838C85A00594C6F /* UILabelExtension.swift */; };
+		C68557492838C90900594C6F /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557482838C90900594C6F /* UITextFieldExtension.swift */; };
 		C685574B2838CCAE00594C6F /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C685574A2838CCAE00594C6F /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C61697DA283F8E6400640755 /* CustomAlertViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomAlertViewController.storyboard; sourceTree = "<group>"; };
+		C61697DC283F8E7800640755 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
 		C685571E2838C03200594C6F /* paperAirplane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = paperAirplane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C68557212838C03200594C6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C68557232838C03200594C6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,10 +37,10 @@
 		C68557302838C03600594C6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C68557322838C03600594C6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C685573F2838C61D00594C6F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		C68557422838C74F00594C6F /* VCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCExtension.swift; sourceTree = "<group>"; };
+		C68557422838C74F00594C6F /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		C68557442838C7B400594C6F /* DeviceConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceConfig.swift; sourceTree = "<group>"; };
-		C68557462838C85A00594C6F /* LabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelExtension.swift; sourceTree = "<group>"; };
-		C68557482838C90900594C6F /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
+		C68557462838C85A00594C6F /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		C68557482838C90900594C6F /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		C685574A2838CCAE00594C6F /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		C685574D2838CD1800594C6F /* RIDIBatang.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RIDIBatang.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +116,7 @@
 		C685573B2838C5B200594C6F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C685574E2838D61B00594C6F /* CustomView */,
 				C685573D2838C5DE00594C6F /* CustomCell */,
 				C685573E2838C5E600594C6F /* Stroryboard */,
 			);
@@ -123,9 +128,9 @@
 			children = (
 				C685573F2838C61D00594C6F /* Constants.swift */,
 				C68557442838C7B400594C6F /* DeviceConfig.swift */,
-				C68557422838C74F00594C6F /* VCExtension.swift */,
-				C68557462838C85A00594C6F /* LabelExtension.swift */,
-				C68557482838C90900594C6F /* TextFieldExtension.swift */,
+				C68557422838C74F00594C6F /* CustomAlert.swift */,
+				C68557462838C85A00594C6F /* UILabelExtension.swift */,
+				C68557482838C90900594C6F /* UITextFieldExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -152,6 +157,15 @@
 				C685574D2838CD1800594C6F /* RIDIBatang.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C685574E2838D61B00594C6F /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				C61697DA283F8E6400640755 /* CustomAlertViewController.storyboard */,
+				C61697DC283F8E7800640755 /* CustomAlertViewController.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C68557312838C03600594C6F /* LaunchScreen.storyboard in Resources */,
+				C61697DB283F8E6400640755 /* CustomAlertViewController.storyboard in Resources */,
 				C685572E2838C03500594C6F /* Assets.xcassets in Resources */,
 				C68557292838C03200594C6F /* Main.storyboard in Resources */,
 			);
@@ -225,14 +240,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C68557492838C90900594C6F /* TextFieldExtension.swift in Sources */,
+				C68557492838C90900594C6F /* UITextFieldExtension.swift in Sources */,
 				C68557402838C61D00594C6F /* Constants.swift in Sources */,
 				C68557452838C7B400594C6F /* DeviceConfig.swift in Sources */,
 				C68557262838C03200594C6F /* MainViewController.swift in Sources */,
-				C68557432838C74F00594C6F /* VCExtension.swift in Sources */,
+				C68557432838C74F00594C6F /* CustomAlert.swift in Sources */,
 				C685574B2838CCAE00594C6F /* StartViewController.swift in Sources */,
-				C68557472838C85A00594C6F /* LabelExtension.swift in Sources */,
+				C68557472838C85A00594C6F /* UILabelExtension.swift in Sources */,
 				C68557222838C03200594C6F /* AppDelegate.swift in Sources */,
+				C61697DD283F8E7800640755 /* CustomAlertViewController.swift in Sources */,
 				C685572C2838C03200594C6F /* paperAirplane.xcdatamodeld in Sources */,
 				C68557242838C03200594C6F /* SceneDelegate.swift in Sources */,
 			);

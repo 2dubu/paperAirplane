@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RIDIBatang.otf">
+            <string>RIDIBatang</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Custom Alert View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="CustomAlertViewController" customModule="paperAirplane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" alpha="0.5" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3m-nh-GQ0">
+                                <rect key="frame" x="40" y="374" width="334" height="148.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xcy-Zg-mVb">
+                                        <rect key="frame" x="0.0" y="108.5" width="167" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Tme-Ri-uyp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RIDIBatang" family="RIDIBatang" pointSize="14"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="다음에 볼게요">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="SkO-uW-pLZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="246" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYj-Iq-cCL">
+                                        <rect key="frame" x="167" y="108.5" width="167" height="40"/>
+                                        <fontDescription key="fontDescription" name="RIDIBatang" family="RIDIBatang" pointSize="14"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="좋아요!">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나는 바보다" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVl-0x-tIq">
+                                        <rect key="frame" x="40" y="40" width="254" height="28.5"/>
+                                        <fontDescription key="fontDescription" name="RIDIBatang" family="RIDIBatang" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="TYj-Iq-cCL" secondAttribute="bottom" id="9qx-HT-4XE"/>
+                                    <constraint firstItem="TYj-Iq-cCL" firstAttribute="leading" secondItem="Xcy-Zg-mVb" secondAttribute="trailing" id="DS4-fK-NNx"/>
+                                    <constraint firstItem="Xcy-Zg-mVb" firstAttribute="top" secondItem="mVl-0x-tIq" secondAttribute="bottom" constant="40" id="Ie3-PF-cpb"/>
+                                    <constraint firstItem="Xcy-Zg-mVb" firstAttribute="width" secondItem="c3m-nh-GQ0" secondAttribute="width" multiplier="0.5" id="Nzx-ea-aX1"/>
+                                    <constraint firstItem="mVl-0x-tIq" firstAttribute="leading" secondItem="c3m-nh-GQ0" secondAttribute="leading" constant="40" id="RoK-eF-4UA"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xcy-Zg-mVb" secondAttribute="bottom" id="XTG-3f-5P5"/>
+                                    <constraint firstItem="Xcy-Zg-mVb" firstAttribute="leading" secondItem="c3m-nh-GQ0" secondAttribute="leading" id="Y9t-Nc-IDZ"/>
+                                    <constraint firstItem="mVl-0x-tIq" firstAttribute="top" secondItem="c3m-nh-GQ0" secondAttribute="top" constant="40" id="a9c-LK-njS"/>
+                                    <constraint firstAttribute="trailing" secondItem="mVl-0x-tIq" secondAttribute="trailing" constant="40" id="cGs-yi-ZlV"/>
+                                    <constraint firstAttribute="trailing" secondItem="TYj-Iq-cCL" secondAttribute="trailing" id="i3v-XY-IIt"/>
+                                    <constraint firstItem="TYj-Iq-cCL" firstAttribute="height" secondItem="Xcy-Zg-mVb" secondAttribute="height" id="kcy-Wz-SW4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="c3m-nh-GQ0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="3pf-PW-lga"/>
+                            <constraint firstItem="c3m-nh-GQ0" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="BG3-8h-XbY"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="c3m-nh-GQ0" secondAttribute="trailing" constant="40" id="FgO-AN-TgE"/>
+                            <constraint firstItem="c3m-nh-GQ0" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="HAu-Ix-cfH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alertView" destination="c3m-nh-GQ0" id="gPa-lg-Q0W"/>
+                        <outlet property="cancelButton" destination="Xcy-Zg-mVb" id="jnd-Wv-X12"/>
+                        <outlet property="confirmButton" destination="TYj-Iq-cCL" id="HZf-qs-okq"/>
+                        <outlet property="textLabel" destination="mVl-0x-tIq" id="hGs-Gi-npd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
