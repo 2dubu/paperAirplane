@@ -22,6 +22,7 @@
 		C68557472838C85A00594C6F /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557462838C85A00594C6F /* UILabelExtension.swift */; };
 		C68557492838C90900594C6F /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557482838C90900594C6F /* UITextFieldExtension.swift */; };
 		C685574B2838CCAE00594C6F /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C685574A2838CCAE00594C6F /* StartViewController.swift */; };
+		C6E669E1284F713B006A28C9 /* RIDIBatang.otf in Resources */ = {isa = PBXBuildFile; fileRef = C685574D2838CD1800594C6F /* RIDIBatang.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -229,6 +230,7 @@
 				C68557312838C03600594C6F /* LaunchScreen.storyboard in Resources */,
 				C61697DB283F8E6400640755 /* CustomAlertViewController.storyboard in Resources */,
 				C685572E2838C03500594C6F /* Assets.xcassets in Resources */,
+				C6E669E1284F713B006A28C9 /* RIDIBatang.otf in Resources */,
 				C68557292838C03200594C6F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
