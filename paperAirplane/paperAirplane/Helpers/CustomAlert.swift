@@ -13,7 +13,7 @@ class CustomAlert {
     static let shared = CustomAlert()
     let window = UIApplication.shared.windows.first { $0.isKeyWindow }
     
-    public func showAlert(vc: UIViewController, alertType: AlertType, alertText: String, cancelButtonText: String?, confirmButtonText: String, _ completion: @escaping () -> Void){
+    public func showAlert(vc: UIViewController, alertType: AlertType, alertText: String, cancelButtonText: String? = nil, confirmButtonText: String, _ completion: (() -> Void)? = nil){
         
         if let rootVc = window?.rootViewController{
             
@@ -21,7 +21,8 @@ class CustomAlert {
             let customAlertStoryboard = UIStoryboard(name: "CustomAlertViewController", bundle: nil)
             let customAlertViewController = customAlertStoryboard.instantiateViewController(withIdentifier: "CustomAlertViewController") as! CustomAlertViewController
             
-            customAlertViewController.modalPresentationStyle = .overCurrentContext
+            customAlertViewController.modalPresentationStyle = .fullScreen
+            customAlertViewController.modalTransitionStyle = .crossDissolve
             customAlertViewController.alertText = alertText
             customAlertViewController.alertType = alertType
             customAlertViewController.cancelButtonName = cancelButtonText ?? ""

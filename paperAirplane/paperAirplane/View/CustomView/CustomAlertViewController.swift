@@ -58,9 +58,8 @@ class CustomAlertViewController: UIViewController {
         if let confirmButtonCompletionClosure = confirmButtonCompletionClosure {
             confirmButtonCompletionClosure()
             
-            self.dismiss(animated: true, completion: nil)
         }
-        
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {

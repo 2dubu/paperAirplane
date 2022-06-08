@@ -41,10 +41,11 @@ class StartViewController: UIViewController {
             // 네트워크 연결 O
             let mainNav = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainNavigationController")
             mainNav.modalPresentationStyle = .fullScreen
+            mainNav.modalTransitionStyle = .crossDissolve
             self.present(mainNav, animated: true, completion: nil)
         } else {
             // 네트워크 연결 X
-            CustomAlert.shared.showAlert(vc: self, alertType: .onlyConfirm, alertText: "서버에 연결할 수 없습니다", cancelButtonText: nil, confirmButtonText: "네트워크 연결이 불안정합니다.\n잠시 후에 다시 시도해주세요.") {
+            CustomAlert.shared.showAlert(vc: self, alertType: .onlyConfirm, alertText: "서버에 연결할 수 없습니다.\n네트워크 연결 상태를 확인하고 다시 시도해주세요.", confirmButtonText: "확인") {
                 self.checkDeviceNetworkStatusAndPresentView()
             }
         }
