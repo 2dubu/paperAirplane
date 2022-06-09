@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C61697DB283F8E6400640755 /* CustomAlertViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61697DA283F8E6400640755 /* CustomAlertViewController.storyboard */; };
 		C61697DD283F8E7800640755 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61697DC283F8E7800640755 /* CustomAlertViewController.swift */; };
+		C68121B22852633200F32ECA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C68121B12852633200F32ECA /* Lottie */; };
 		C68557222838C03200594C6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557212838C03200594C6F /* AppDelegate.swift */; };
 		C68557242838C03200594C6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557232838C03200594C6F /* SceneDelegate.swift */; };
 		C68557262838C03200594C6F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557252838C03200594C6F /* MainViewController.swift */; };
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C68121B22852633200F32ECA /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +187,9 @@
 			dependencies = (
 			);
 			name = paperAirplane;
+			packageProductDependencies = (
+				C68121B12852633200F32ECA /* Lottie */,
+			);
 			productName = paperAirplane;
 			productReference = C685571E2838C03200594C6F /* paperAirplane.app */;
 			productType = "com.apple.product-type.application";
@@ -213,6 +218,9 @@
 				Base,
 			);
 			mainGroup = C68557152838C03200594C6F;
+			packageReferences = (
+				C68121B02852633200F32ECA /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = C685571F2838C03200594C6F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -470,6 +478,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C68121B02852633200F32ECA /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C68121B12852633200F32ECA /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C68121B02852633200F32ECA /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C685572A2838C03200594C6F /* paperAirplane.xcdatamodeld */ = {
