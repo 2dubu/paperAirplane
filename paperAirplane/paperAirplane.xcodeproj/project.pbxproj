@@ -82,9 +82,8 @@
 				C68557232838C03200594C6F /* SceneDelegate.swift */,
 				C68557382838C58600594C6F /* Resource */,
 				C685573C2838C5BD00594C6F /* Helpers */,
-				C685573B2838C5B200594C6F /* View */,
-				C685573A2838C5A100594C6F /* ViewController */,
 				C68557392838C59700594C6F /* Model */,
+				C685573B2838C5B200594C6F /* View */,
 				C685572D2838C03500594C6F /* Assets.xcassets */,
 				C68557322838C03600594C6F /* Info.plist */,
 				C685572A2838C03200594C6F /* paperAirplane.xcdatamodeld */,
@@ -107,21 +106,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		C685573A2838C5A100594C6F /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				C685574A2838CCAE00594C6F /* StartViewController.swift */,
-				C68557252838C03200594C6F /* MainViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
 		C685573B2838C5B200594C6F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C685572F2838C03600594C6F /* LaunchScreen.storyboard */,
+				C685573E2838C5E600594C6F /* Main */,
 				C685574E2838D61B00594C6F /* CustomView */,
 				C685573D2838C5DE00594C6F /* CustomCell */,
-				C685573E2838C5E600594C6F /* Stroryboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -145,13 +136,14 @@
 			path = CustomCell;
 			sourceTree = "<group>";
 		};
-		C685573E2838C5E600594C6F /* Stroryboard */ = {
+		C685573E2838C5E600594C6F /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				C685572F2838C03600594C6F /* LaunchScreen.storyboard */,
 				C68557272838C03200594C6F /* Main.storyboard */,
+				C685574A2838CCAE00594C6F /* StartViewController.swift */,
+				C68557252838C03200594C6F /* MainViewController.swift */,
 			);
-			path = Stroryboard;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		C685574C2838CD0000594C6F /* Fonts */ = {
