@@ -10,6 +10,7 @@
 		C61697DB283F8E6400640755 /* CustomAlertViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61697DA283F8E6400640755 /* CustomAlertViewController.storyboard */; };
 		C61697DD283F8E7800640755 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61697DC283F8E7800640755 /* CustomAlertViewController.swift */; };
 		C68121B22852633200F32ECA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C68121B12852633200F32ECA /* Lottie */; };
+		C68121B5285491A800F32ECA /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68121B4285491A800F32ECA /* UIViewExtension.swift */; };
 		C68557222838C03200594C6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557212838C03200594C6F /* AppDelegate.swift */; };
 		C68557242838C03200594C6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557232838C03200594C6F /* SceneDelegate.swift */; };
 		C68557262838C03200594C6F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557252838C03200594C6F /* MainViewController.swift */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		C61697DA283F8E6400640755 /* CustomAlertViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomAlertViewController.storyboard; sourceTree = "<group>"; };
 		C61697DC283F8E7800640755 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
+		C68121B4285491A800F32ECA /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		C685571E2838C03200594C6F /* paperAirplane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = paperAirplane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C68557212838C03200594C6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C68557232838C03200594C6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C68121B32854918700F32ECA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C68557462838C85A00594C6F /* UILabelExtension.swift */,
+				C68557482838C90900594C6F /* UITextFieldExtension.swift */,
+				C68121B4285491A800F32ECA /* UIViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		C68557152838C03200594C6F = {
 			isa = PBXGroup;
 			children = (
@@ -123,8 +135,7 @@
 				C685573F2838C61D00594C6F /* Constants.swift */,
 				C68557442838C7B400594C6F /* DeviceConfig.swift */,
 				C68557422838C74F00594C6F /* CustomAlert.swift */,
-				C68557462838C85A00594C6F /* UILabelExtension.swift */,
-				C68557482838C90900594C6F /* UITextFieldExtension.swift */,
+				C68121B32854918700F32ECA /* Extension */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -250,6 +261,7 @@
 				C685574B2838CCAE00594C6F /* StartViewController.swift in Sources */,
 				C68557472838C85A00594C6F /* UILabelExtension.swift in Sources */,
 				C68557222838C03200594C6F /* AppDelegate.swift in Sources */,
+				C68121B5285491A800F32ECA /* UIViewExtension.swift in Sources */,
 				C61697DD283F8E7800640755 /* CustomAlertViewController.swift in Sources */,
 				C685572C2838C03200594C6F /* paperAirplane.xcdatamodeld in Sources */,
 				C68557242838C03200594C6F /* SceneDelegate.swift in Sources */,
