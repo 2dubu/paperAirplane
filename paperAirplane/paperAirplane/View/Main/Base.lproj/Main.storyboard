@@ -48,14 +48,69 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="바비인형 님이 현재 보유하고 있는 연필은 4개 입니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReX-q5-QNF">
+                                <rect key="frame" x="32" y="110" width="246" height="66"/>
+                                <fontDescription key="fontDescription" name="RIDIBatang" family="RIDIBatang" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CbQ-hG-ArM">
+                                <rect key="frame" x="31" y="177" width="34.5" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="BdW-7i-lhn"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="byl-wZ-EWH" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="40" y="200" width="334" height="480"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="paperplane"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFN-Ss-QSy">
+                                <rect key="frame" x="42" y="770" width="330" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="eiu-b9-vZx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="RIDIBatang" family="RIDIBatang" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="종이비행기 날리러 가기">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="byl-wZ-EWH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="O1P-Qi-rlp"/>
+                            <constraint firstItem="DFN-Ss-QSy" firstAttribute="top" secondItem="byl-wZ-EWH" secondAttribute="bottom" constant="90" id="OQf-L3-AHm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="byl-wZ-EWH" secondAttribute="trailing" constant="40" id="Osa-DP-Hgu"/>
+                            <constraint firstItem="byl-wZ-EWH" firstAttribute="top" secondItem="ReX-q5-QNF" secondAttribute="bottom" constant="24" id="PFM-MO-LJr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DFN-Ss-QSy" secondAttribute="trailing" constant="42" id="Rwr-wi-IXr"/>
+                            <constraint firstItem="CbQ-hG-ArM" firstAttribute="bottom" secondItem="ReX-q5-QNF" secondAttribute="bottom" constant="2" id="XVq-yR-MLv"/>
+                            <constraint firstItem="ReX-q5-QNF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="bnl-fz-fyZ"/>
+                            <constraint firstItem="CbQ-hG-ArM" firstAttribute="width" secondItem="ReX-q5-QNF" secondAttribute="width" multiplier="0.14" id="cV2-6X-xw4"/>
+                            <constraint firstItem="DFN-Ss-QSy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="fwt-aQ-oca"/>
+                            <constraint firstItem="CbQ-hG-ArM" firstAttribute="leading" secondItem="ReX-q5-QNF" secondAttribute="leading" constant="-1" id="ktS-Ep-Efv"/>
+                            <constraint firstAttribute="bottom" secondItem="DFN-Ss-QSy" secondAttribute="bottom" constant="80" id="r1V-xL-Ihq"/>
+                            <constraint firstItem="ReX-q5-QNF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="s5D-gL-Vcp"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="yPr-mb-j0f"/>
+                    <navigationItem key="navigationItem" id="yPr-mb-j0f">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="CSx-k2-ayl"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="ywz-qh-YKX"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="lottieView" destination="byl-wZ-EWH" id="cV5-FX-BT0"/>
+                        <outlet property="mainInfoTextLabel" destination="ReX-q5-QNF" id="UME-5Y-sde"/>
+                        <outlet property="sendAirplaneButton" destination="DFN-Ss-QSy" id="ruv-tU-qhc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1675" y="71"/>
+            <point key="canvasLocation" x="1673.913043478261" y="70.982142857142847"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dkz-KJ-8Bp">
