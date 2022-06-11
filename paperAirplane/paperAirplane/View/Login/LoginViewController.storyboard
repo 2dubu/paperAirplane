@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RIDIBatang.otf">
+            <string>RIDIBatang</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="Y6W-OH-hqX" customClass="LoginViewController" customModule="paperAirplane" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내 마음 비행기 날리러 가는 길" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJY-kJ-1zF">
+                                <rect key="frame" x="118" y="144" width="178" height="14.5"/>
+                                <fontDescription key="fontDescription" name="RIDIBatang" family="RIDIBatang" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ywa-sN-frL">
+                                <rect key="frame" x="100" y="178.5" width="214" height="104.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ywa-sN-frL" secondAttribute="height" multiplier="172:84" id="HsL-lH-n4X"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HtN-Ee-awo">
+                                <rect key="frame" x="103.5" y="760.5" width="207" height="55.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kakao_login" translatesAutoresizingMaskIntoConstraints="NO" id="trh-Qk-hk4">
+                                        <rect key="frame" x="0.0" y="0.0" width="55.5" height="55.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="trh-Qk-hk4" secondAttribute="height" multiplier="1:1" id="svk-8F-2pA"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google_login" translatesAutoresizingMaskIntoConstraints="NO" id="zbt-XT-RYl">
+                                        <rect key="frame" x="75.5" y="0.0" width="56" height="55.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="zbt-XT-RYl" secondAttribute="height" multiplier="1:1" id="S2c-5u-Ehn"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple_login" translatesAutoresizingMaskIntoConstraints="NO" id="Qfb-i2-F9e">
+                                        <rect key="frame" x="151.5" y="0.0" width="55.5" height="55.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Qfb-i2-F9e" secondAttribute="height" multiplier="1:1" id="Hy9-fb-vTg"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="소셜 로그인하고 비행기 날리러 가기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZu-wW-uR7">
+                                <rect key="frame" x="116" y="738.5" width="182" height="12"/>
+                                <fontDescription key="fontDescription" name="RIDIBatang" family="RIDIBatang" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ywa-sN-frL" secondAttribute="trailing" constant="100" id="5c2-Ii-nUW"/>
+                            <constraint firstItem="LZu-wW-uR7" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="P3L-hy-AzJ"/>
+                            <constraint firstItem="HtN-Ee-awo" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="QkJ-7b-TiM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="HtN-Ee-awo" secondAttribute="bottom" constant="46" id="VD1-sC-wi6"/>
+                            <constraint firstItem="HtN-Ee-awo" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.5" id="h3h-0D-V6z"/>
+                            <constraint firstItem="Ywa-sN-frL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="100" id="jpL-gA-Jzj"/>
+                            <constraint firstItem="HtN-Ee-awo" firstAttribute="top" secondItem="LZu-wW-uR7" secondAttribute="bottom" constant="10" id="m4v-dX-wvX"/>
+                            <constraint firstItem="hJY-kJ-1zF" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="mqn-f7-22F"/>
+                            <constraint firstItem="Ywa-sN-frL" firstAttribute="top" secondItem="hJY-kJ-1zF" secondAttribute="bottom" constant="20" id="tVZ-YX-gLB"/>
+                            <constraint firstItem="hJY-kJ-1zF" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="wUC-aQ-KKT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="78.348214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple_login" width="44" height="44"/>
+        <image name="google_login" width="44" height="44"/>
+        <image name="kakao_login" width="44" height="44"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
