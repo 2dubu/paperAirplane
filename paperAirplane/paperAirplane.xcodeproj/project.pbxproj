@@ -10,6 +10,7 @@
 		C61697DB283F8E6400640755 /* CustomAlertViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61697DA283F8E6400640755 /* CustomAlertViewController.storyboard */; };
 		C61697DD283F8E7800640755 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61697DC283F8E7800640755 /* CustomAlertViewController.swift */; };
 		C68121B22852633200F32ECA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C68121B12852633200F32ECA /* Lottie */; };
+		C68121B5285491A800F32ECA /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68121B4285491A800F32ECA /* UIViewExtension.swift */; };
 		C68557222838C03200594C6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557212838C03200594C6F /* AppDelegate.swift */; };
 		C68557242838C03200594C6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557232838C03200594C6F /* SceneDelegate.swift */; };
 		C68557262838C03200594C6F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557252838C03200594C6F /* MainViewController.swift */; };
@@ -23,12 +24,14 @@
 		C68557472838C85A00594C6F /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557462838C85A00594C6F /* UILabelExtension.swift */; };
 		C68557492838C90900594C6F /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557482838C90900594C6F /* UITextFieldExtension.swift */; };
 		C685574B2838CCAE00594C6F /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C685574A2838CCAE00594C6F /* StartViewController.swift */; };
+		C696E92A2854AEF50028EDDD /* paperplane.json in Resources */ = {isa = PBXBuildFile; fileRef = C696E9292854AEF50028EDDD /* paperplane.json */; };
 		C6E669E1284F713B006A28C9 /* RIDIBatang.otf in Resources */ = {isa = PBXBuildFile; fileRef = C685574D2838CD1800594C6F /* RIDIBatang.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C61697DA283F8E6400640755 /* CustomAlertViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomAlertViewController.storyboard; sourceTree = "<group>"; };
 		C61697DC283F8E7800640755 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
+		C68121B4285491A800F32ECA /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		C685571E2838C03200594C6F /* paperAirplane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = paperAirplane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C68557212838C03200594C6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C68557232838C03200594C6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 		C68557482838C90900594C6F /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		C685574A2838CCAE00594C6F /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		C685574D2838CD1800594C6F /* RIDIBatang.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RIDIBatang.otf; sourceTree = "<group>"; };
+		C696E9292854AEF50028EDDD /* paperplane.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = paperplane.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C68121B32854918700F32ECA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C68557462838C85A00594C6F /* UILabelExtension.swift */,
+				C68557482838C90900594C6F /* UITextFieldExtension.swift */,
+				C68121B4285491A800F32ECA /* UIViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		C68557152838C03200594C6F = {
 			isa = PBXGroup;
 			children = (
@@ -82,9 +96,8 @@
 				C68557232838C03200594C6F /* SceneDelegate.swift */,
 				C68557382838C58600594C6F /* Resource */,
 				C685573C2838C5BD00594C6F /* Helpers */,
-				C685573B2838C5B200594C6F /* View */,
-				C685573A2838C5A100594C6F /* ViewController */,
 				C68557392838C59700594C6F /* Model */,
+				C685573B2838C5B200594C6F /* View */,
 				C685572D2838C03500594C6F /* Assets.xcassets */,
 				C68557322838C03600594C6F /* Info.plist */,
 				C685572A2838C03200594C6F /* paperAirplane.xcdatamodeld */,
@@ -95,6 +108,7 @@
 		C68557382838C58600594C6F /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				C696E9282854AEE80028EDDD /* lottie */,
 				C685574C2838CD0000594C6F /* Fonts */,
 			);
 			path = Resource;
@@ -107,21 +121,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		C685573A2838C5A100594C6F /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				C685574A2838CCAE00594C6F /* StartViewController.swift */,
-				C68557252838C03200594C6F /* MainViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
 		C685573B2838C5B200594C6F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C685572F2838C03600594C6F /* LaunchScreen.storyboard */,
+				C685573E2838C5E600594C6F /* Main */,
 				C685574E2838D61B00594C6F /* CustomView */,
 				C685573D2838C5DE00594C6F /* CustomCell */,
-				C685573E2838C5E600594C6F /* Stroryboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -132,8 +138,7 @@
 				C685573F2838C61D00594C6F /* Constants.swift */,
 				C68557442838C7B400594C6F /* DeviceConfig.swift */,
 				C68557422838C74F00594C6F /* CustomAlert.swift */,
-				C68557462838C85A00594C6F /* UILabelExtension.swift */,
-				C68557482838C90900594C6F /* UITextFieldExtension.swift */,
+				C68121B32854918700F32ECA /* Extension */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -145,13 +150,14 @@
 			path = CustomCell;
 			sourceTree = "<group>";
 		};
-		C685573E2838C5E600594C6F /* Stroryboard */ = {
+		C685573E2838C5E600594C6F /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				C685572F2838C03600594C6F /* LaunchScreen.storyboard */,
 				C68557272838C03200594C6F /* Main.storyboard */,
+				C685574A2838CCAE00594C6F /* StartViewController.swift */,
+				C68557252838C03200594C6F /* MainViewController.swift */,
 			);
-			path = Stroryboard;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		C685574C2838CD0000594C6F /* Fonts */ = {
@@ -169,6 +175,14 @@
 				C61697DC283F8E7800640755 /* CustomAlertViewController.swift */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		C696E9282854AEE80028EDDD /* lottie */ = {
+			isa = PBXGroup;
+			children = (
+				C696E9292854AEF50028EDDD /* paperplane.json */,
+			);
+			path = lottie;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +254,7 @@
 				C685572E2838C03500594C6F /* Assets.xcassets in Resources */,
 				C6E669E1284F713B006A28C9 /* RIDIBatang.otf in Resources */,
 				C68557292838C03200594C6F /* Main.storyboard in Resources */,
+				C696E92A2854AEF50028EDDD /* paperplane.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +273,7 @@
 				C685574B2838CCAE00594C6F /* StartViewController.swift in Sources */,
 				C68557472838C85A00594C6F /* UILabelExtension.swift in Sources */,
 				C68557222838C03200594C6F /* AppDelegate.swift in Sources */,
+				C68121B5285491A800F32ECA /* UIViewExtension.swift in Sources */,
 				C61697DD283F8E7800640755 /* CustomAlertViewController.swift in Sources */,
 				C685572C2838C03200594C6F /* paperAirplane.xcdatamodeld in Sources */,
 				C68557242838C03200594C6F /* SceneDelegate.swift in Sources */,
