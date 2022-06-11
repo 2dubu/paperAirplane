@@ -26,5 +26,5 @@ let loginGradientColor = [
     CGColor(red: 222/255, green: 159/255, blue: 164/255, alpha: 1)
 ]
 
-// Button background color
-let buttonBackgroundColor = UIColor(red: 241/255, green: 241/255, blue: 245/255, alpha: 1)
+// app colors
+let myWhiteColor = UIColor(red: 241/255, green: 241/255, blue: 245/255, alpha: 1)

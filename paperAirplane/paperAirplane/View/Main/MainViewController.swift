@@ -17,8 +17,9 @@ class MainViewController: UIViewController {
     // 로티 뷰
     @IBOutlet weak var lottieView: AnimationView!
     
+    @IBOutlet weak var checkPaperAirplaneButton: UIButton!
     // 종이비행기 날리러 가기 버튼
-    @IBOutlet weak var sendAirplaneButton: UIButton!
+    @IBOutlet weak var sendPaperAirplaneButton: UIButton!
     
     // MARK: - Variables
     
@@ -37,13 +38,16 @@ class MainViewController: UIViewController {
     private func setElements() {
         setMainInfoTextLabel()
         setLottieView()
-        setSendAirPlaneButton()
+        setButtons([
+            checkPaperAirplaneButton,
+            sendPaperAirplaneButton
+        ])
     }
     
     /// 사용자 이름, 보유 연필 수 표시 레이블 세팅
     /// 텍스트, 텍스트 컬러, 줄 간격
     private func setMainInfoTextLabel() {
-        mainInfoTextLabel.textColor = .white
+        mainInfoTextLabel.textColor = myWhiteColor
         mainInfoTextLabel.setTextWithLineHeight(text: "바비인형 님이\n현재 보유하고 있는 연필은\n4개입니다.",
                                                 lineHeight: 32)
     }
@@ -54,17 +58,19 @@ class MainViewController: UIViewController {
         lottieView.play()
     }
     
-    /// 종이비행기 날리러 가기 버튼 세팅
+    /// 버튼 기본 디자인 세팅
     /// 배경색, 둥글기, 그림자
-    private func setSendAirPlaneButton() {
-        sendAirplaneButton.backgroundColor = buttonBackgroundColor
-        sendAirplaneButton.layer.cornerRadius = 16
+    private func setButtons(_ buttons: [UIButton]) {
         
-        sendAirplaneButton.layer.shadowOffset = .zero
-        sendAirplaneButton.layer.shadowRadius = 8
-        sendAirplaneButton.layer.shadowOpacity = 1.0
-        sendAirplaneButton.layer.shadowColor = buttonBackgroundColor.cgColor
-        
+        for i in 0..<buttons.count {
+            buttons[i].backgroundColor = myWhiteColor
+            buttons[i].layer.cornerRadius = 16
+            
+            buttons[i].layer.shadowOffset = .zero
+            buttons[i].layer.shadowRadius = 8
+            buttons[i].layer.shadowOpacity = 1.0
+            buttons[i].layer.shadowColor = myWhiteColor.cgColor
+        }
     }
     
 }
