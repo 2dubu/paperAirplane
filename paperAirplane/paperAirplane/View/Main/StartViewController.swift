@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class StartViewController: UIViewController {
 
@@ -37,15 +38,22 @@ class StartViewController: UIViewController {
     
     //MARK: - function
     func checkDeviceNetworkStatusAndPresentView() {
-        if(DeviceManager.shared.networkStatus) {
-            // 네트워크 연결 O
-            let mainNav = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainNavigationController")
-            mainNav.modalPresentationStyle = .fullScreen
-            mainNav.modalTransitionStyle = .crossDissolve
-            self.present(mainNav, animated: true, completion: nil)
-        } else {
-            // 네트워크 연결 X
-            CustomAlert.shared.showAlert(vc: self, alertType: .onlyConfirm, alertText: "서버에 연결할 수 없습니다.\n네트워크 연결 상태를 확인하고 다시 시도해주세요.", confirmButtonText: "확인") {
+        if(DeviceManager.shared.networkStatus) { // 네트워크 연결 O
+            if Auth.auth().currentUser == nil {
+                // 로그인 상태가 아니면
+                let loginVC = getVC("LoginViewController")
+                loginVC.modalPresentationStyle = .fullScreen
+                loginVC.modalTransitionStyle = .crossDissolve
+                present(loginVC, animated: true)
+            } else {
+                // 로그인 상태면
+                let mainNC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainNavigationController")
+                mainNC.modalPresentationStyle = .fullScreen
+                mainNC.modalTransitionStyle = .crossDissolve
+                present(mainNC, animated: true)
+            }
+        } else { // 네트워크 연결 X
+            CustomAlert.shared.showAlert(vc: self, alertType: .onlyConfirm, alertText: "서버에 연결할 수 없습니다.\n네트워크 연결 상태를 확인하고 다시 시도해주세요.", confirmButtonText: "재시도") {
                 self.checkDeviceNetworkStatusAndPresentView()
             }
         }

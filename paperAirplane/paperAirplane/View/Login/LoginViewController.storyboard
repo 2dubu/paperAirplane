@@ -55,7 +55,7 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="google_login"/>
                                         <connections>
-                                            <action selector="googleLoginButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="QuG-wR-VLS"/>
+                                            <action selector="googleLoginButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="b3Q-k7-WaI"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9s-ai-xiJ">
@@ -77,11 +77,16 @@
                                 <color key="textColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="DfQ-By-sqx">
+                                <rect key="frame" x="197" y="443" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ywa-sN-frL" secondAttribute="trailing" constant="100" id="5c2-Ii-nUW"/>
+                            <constraint firstItem="DfQ-By-sqx" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="7D6-Rw-9HW"/>
+                            <constraint firstItem="DfQ-By-sqx" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="F8Z-8u-RCe"/>
                             <constraint firstItem="LZu-wW-uR7" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="P3L-hy-AzJ"/>
                             <constraint firstItem="HtN-Ee-awo" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="QkJ-7b-TiM"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="HtN-Ee-awo" secondAttribute="bottom" constant="46" id="VD1-sC-wi6"/>
@@ -93,6 +98,9 @@
                             <constraint firstItem="hJY-kJ-1zF" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="wUC-aQ-KKT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="indicatorView" destination="DfQ-By-sqx" id="iMj-Co-f5s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
