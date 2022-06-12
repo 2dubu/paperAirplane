@@ -14,4 +14,14 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         view.setGradient(colors: loginGradientColor)
     }
+    
+    // MARK: - IBActions
+    @IBAction func kakaoLoginButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func googleLoginButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func appleLoginButtonTapped(_ sender: Any) {
+    }
 }
