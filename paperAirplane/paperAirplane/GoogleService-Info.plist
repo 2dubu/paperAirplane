@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>601405362926-l99sn85qd9rorb8dv79mm9uooj421ctd.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.601405362926-l99sn85qd9rorb8dv79mm9uooj421ctd</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB72aEKB30sV-yb6HvMnvZIFTlsMnVGHSo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>601405362926</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>dubu2.paperAirplane</string>
+	<key>PROJECT_ID</key>
+	<string>paperairplane-10576</string>
+	<key>STORAGE_BUCKET</key>
+	<string>paperairplane-10576.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:601405362926:ios:7ac3e1ed060a1bf97319ff</string>
+</dict>
+</plist>
