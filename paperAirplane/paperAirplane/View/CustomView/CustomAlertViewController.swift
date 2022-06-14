@@ -8,6 +8,34 @@
 import Foundation
 import UIKit
 
+protocol CustomAlertDelegate {
+    func action() 
+}
+
+extension CustomAlertDelegate where Self: UIViewController {
+    func show(
+        alertType: AlertType,
+        alertText: String,
+        cancelButtonText: String? = "",
+        confirmButtonText: String
+    ) {
+        
+        let customAlertStoryboard = UIStoryboard(name: "CustomAlertViewController", bundle: nil)
+        let customAlertViewController = customAlertStoryboard.instantiateViewController(withIdentifier: "CustomAlertViewController") as! CustomAlertViewController
+        
+        customAlertViewController.delegate = self
+        
+        customAlertViewController.modalPresentationStyle = .overFullScreen
+        customAlertViewController.modalTransitionStyle = .crossDissolve
+        customAlertViewController.alertText = alertText
+        customAlertViewController.alertType = alertType
+        customAlertViewController.cancelButtonName = cancelButtonText ?? ""
+        customAlertViewController.confirmButtonName = confirmButtonText
+        
+        self.present(customAlertViewController, animated: true, completion: nil)
+    }
+}
+
 enum AlertType {
     case onlyConfirm    // 확인 버튼
     case canCancel      // 확인 + 취소 버튼
@@ -21,6 +49,8 @@ class CustomAlertViewController: UIViewController {
     @IBOutlet weak var confirmButton: UIButton!
     
     var alertType: AlertType = .onlyConfirm
+    
+    var delegate: CustomAlertDelegate?
     
     var alertText = ""
     var cancelButtonName = ""
@@ -55,11 +85,9 @@ class CustomAlertViewController: UIViewController {
     }
     
     @IBAction func confirmButtonTapped(_ sender: Any) {
-        if let confirmButtonCompletionClosure = confirmButtonCompletionClosure {
-            confirmButtonCompletionClosure()
-            
+        self.dismiss(animated: true) {
+            self.delegate?.action()
         }
-        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {

@@ -20,7 +20,6 @@
 		C685572E2838C03500594C6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C685572D2838C03500594C6F /* Assets.xcassets */; };
 		C68557312838C03600594C6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C685572F2838C03600594C6F /* LaunchScreen.storyboard */; };
 		C68557402838C61D00594C6F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C685573F2838C61D00594C6F /* Constants.swift */; };
-		C68557432838C74F00594C6F /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557422838C74F00594C6F /* CustomAlert.swift */; };
 		C68557452838C7B400594C6F /* DeviceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557442838C7B400594C6F /* DeviceConfig.swift */; };
 		C68557472838C85A00594C6F /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557462838C85A00594C6F /* UILabelExtension.swift */; };
 		C68557492838C90900594C6F /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557482838C90900594C6F /* UITextFieldExtension.swift */; };
@@ -50,7 +49,6 @@
 		C68557302838C03600594C6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C68557322838C03600594C6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C685573F2838C61D00594C6F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		C68557422838C74F00594C6F /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		C68557442838C7B400594C6F /* DeviceConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceConfig.swift; sourceTree = "<group>"; };
 		C68557462838C85A00594C6F /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		C68557482838C90900594C6F /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 			children = (
 				C685573F2838C61D00594C6F /* Constants.swift */,
 				C68557442838C7B400594C6F /* DeviceConfig.swift */,
-				C68557422838C74F00594C6F /* CustomAlert.swift */,
 				C68121B32854918700F32ECA /* Extension */,
 			);
 			path = Helpers;
@@ -310,7 +307,6 @@
 				C68557402838C61D00594C6F /* Constants.swift in Sources */,
 				C68557452838C7B400594C6F /* DeviceConfig.swift in Sources */,
 				C68557262838C03200594C6F /* MainViewController.swift in Sources */,
-				C68557432838C74F00594C6F /* CustomAlert.swift in Sources */,
 				C685574B2838CCAE00594C6F /* StartViewController.swift in Sources */,
 				C68557472838C85A00594C6F /* UILabelExtension.swift in Sources */,
 				C68557222838C03200594C6F /* AppDelegate.swift in Sources */,
