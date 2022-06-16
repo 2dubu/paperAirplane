@@ -9,7 +9,8 @@ import Foundation
 import UIKit
 
 protocol CustomAlertDelegate {
-    func action() 
+    func action()
+    func exit()
 }
 
 extension CustomAlertDelegate where Self: UIViewController {
@@ -91,7 +92,9 @@ class CustomAlertViewController: UIViewController {
     }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {
-        self.dismiss(animated: true)
+        self.dismiss(animated: true) {
+            self.delegate?.exit()
+        }
     }
     
     private func setCustomAlertView() {

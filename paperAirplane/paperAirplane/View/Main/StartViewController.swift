@@ -52,4 +52,11 @@ extension StartViewController: CustomAlertDelegate {
     func action() {
         self.checkDeviceNetworkStatusAndPresentView()
     }
+    
+    func exit() {
+        UIApplication.shared.perform(#selector(NSXPCConnection.suspend))
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            Darwin.exit(0)
+        }
+    }
 }
