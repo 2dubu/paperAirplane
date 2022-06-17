@@ -10,6 +10,8 @@
 		C60D243C2854BB4600B5C747 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60D243B2854BB4600B5C747 /* UIViewControllerExtension.swift */; };
 		C61697DB283F8E6400640755 /* CustomAlertViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61697DA283F8E6400640755 /* CustomAlertViewController.storyboard */; };
 		C61697DD283F8E7800640755 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61697DC283F8E7800640755 /* CustomAlertViewController.swift */; };
+		C618FED1285B5B990048FAE3 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C618FED0285B5B990048FAE3 /* SettingViewController.storyboard */; };
+		C618FED3285B5BA50048FAE3 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C618FED2285B5BA50048FAE3 /* SettingViewController.swift */; };
 		C68121B22852633200F32ECA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C68121B12852633200F32ECA /* Lottie */; };
 		C68121B5285491A800F32ECA /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68121B4285491A800F32ECA /* UIViewExtension.swift */; };
 		C68557222838C03200594C6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557212838C03200594C6F /* AppDelegate.swift */; };
@@ -38,6 +40,8 @@
 		C60D243B2854BB4600B5C747 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		C61697DA283F8E6400640755 /* CustomAlertViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomAlertViewController.storyboard; sourceTree = "<group>"; };
 		C61697DC283F8E7800640755 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
+		C618FED0285B5B990048FAE3 /* SettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingViewController.storyboard; sourceTree = "<group>"; };
+		C618FED2285B5BA50048FAE3 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		C68121B4285491A800F32ECA /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		C685571E2838C03200594C6F /* paperAirplane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = paperAirplane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C68557212838C03200594C6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C618FECD285B5B6A0048FAE3 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				C618FED0285B5B990048FAE3 /* SettingViewController.storyboard */,
+				C618FED2285B5BA50048FAE3 /* SettingViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		C68121B32854918700F32ECA /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +155,7 @@
 				C685572F2838C03600594C6F /* LaunchScreen.storyboard */,
 				C685573E2838C5E600594C6F /* Main */,
 				C696E92B2854B7D00028EDDD /* Login */,
+				C618FECD285B5B6A0048FAE3 /* Setting */,
 				C685574E2838D61B00594C6F /* CustomView */,
 				C685573D2838C5DE00594C6F /* CustomCell */,
 			);
@@ -285,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C618FED1285B5B990048FAE3 /* SettingViewController.storyboard in Resources */,
 				C68557312838C03600594C6F /* LaunchScreen.storyboard in Resources */,
 				C6DCFDC62855DF1E00AF7143 /* GoogleService-Info.plist in Resources */,
 				C61697DB283F8E6400640755 /* CustomAlertViewController.storyboard in Resources */,
@@ -308,6 +323,7 @@
 				C68557452838C7B400594C6F /* DeviceConfig.swift in Sources */,
 				C68557262838C03200594C6F /* MainViewController.swift in Sources */,
 				C685574B2838CCAE00594C6F /* StartViewController.swift in Sources */,
+				C618FED3285B5BA50048FAE3 /* SettingViewController.swift in Sources */,
 				C68557472838C85A00594C6F /* UILabelExtension.swift in Sources */,
 				C68557222838C03200594C6F /* AppDelegate.swift in Sources */,
 				C6DCFDF22855F61D00AF7143 /* LoginViewModel.swift in Sources */,
