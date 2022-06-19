@@ -93,4 +93,11 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if hasNotch {
+            return view.frame.height / 13
+        } else {
+            return view.frame.height / 12
+        }
+    }
 }
