@@ -17,7 +17,9 @@ class MainViewController: UIViewController {
     // 로티 뷰
     @IBOutlet weak var lottieView: AnimationView!
     
+    // 나에게 온 종이비행기 확인하기 버튼
     @IBOutlet weak var checkPaperAirplaneButton: UIButton!
+    
     // 종이비행기 날리러 가기 버튼
     @IBOutlet weak var sendPaperAirplaneButton: UIButton!
     
@@ -32,7 +34,18 @@ class MainViewController: UIViewController {
     }
     
     // MARK: - IBActions
+    @IBAction func musicButtonTapped(_ sender: Any) {
+    }
     
+    @IBAction func settingButtonTapped(_ sender: Any) {
+        self.navigationController?.pushViewController(getVC("SettingViewController"), animated: true)
+    }
+    
+    @IBAction func checkPaperAirplaneButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func sendPaperAirplaneButtonTapped(_ sender: Any) {
+    }
     
     // MARK: - Functions
     private func setElements() {

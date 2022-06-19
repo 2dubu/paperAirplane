@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="런치스크린" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPX-J8-dnV">
-                                <rect key="frame" x="148.66666666666666" y="412" width="93" height="20"/>
+                                <rect key="frame" x="148.66666666666666" y="412" width="92.666666666666657" height="20"/>
                                 <fontDescription key="fontDescription" name="RIDIBatang" family="RIDIBatang" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -69,17 +69,6 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="paperplane"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFN-Ss-QSy">
-                                <rect key="frame" x="42" y="718" width="306" height="46"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="eiu-b9-vZx"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="RIDIBatang" family="RIDIBatang" pointSize="14"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="종이비행기 날리러 가기">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5u-9K-sZh">
                                 <rect key="frame" x="42" y="652" width="306" height="46"/>
                                 <constraints>
@@ -90,6 +79,23 @@
                                 <state key="normal" title="내게 온 0개의 종이비행기 확인하기">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="checkPaperAirplaneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kfP-Mu-zVJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFN-Ss-QSy">
+                                <rect key="frame" x="42" y="718" width="306" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="eiu-b9-vZx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="RIDIBatang" family="RIDIBatang" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="종이비행기 날리러 가기">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendPaperAirplaneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qwC-3x-O67"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -115,9 +121,15 @@
                     <navigationItem key="navigationItem" id="yPr-mb-j0f">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="music" id="CSx-k2-ayl">
                             <color key="tintColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="musicButtonTapped:" destination="BYZ-38-t0r" id="wYf-bi-iAP"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="setting" id="ywz-qh-YKX">
                             <color key="tintColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="settingButtonTapped:" destination="BYZ-38-t0r" id="lbo-Wz-WDJ"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
