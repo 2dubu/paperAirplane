@@ -8,6 +8,9 @@
 import Foundation
 import UIKit
 
+// Fonts
+let myFont = "RIDIBatang"
+
 // Custom alert button color
 let alertTextColor = UIColor(red: 25/255, green: 25/255, blue: 25/255, alpha: 1)
 let cancelButtonColor = UIColor(red: 219/255, green: 219/255, blue: 219/255, alpha: 1)
