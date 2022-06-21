@@ -7,6 +7,7 @@
 
 import UIKit
 import Lottie
+import AVFoundation
 
 class MainViewController: UIViewController {
     
@@ -24,17 +25,40 @@ class MainViewController: UIViewController {
     @IBOutlet weak var sendPaperAirplaneButton: UIButton!
     
     // MARK: - Variables
+    let myUserDefaults = UserDefaults.standard
+    
+    var audioPlayer: AVAudioPlayer?
+    
+    let bgmUrl = Bundle.main.url(forResource: "BGM", withExtension: "mp3")
+    var bgmIsOn = Bool()
     
     // MARK: - LifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.setGradient(colors: mainGradientColor)
         
+        // userDefault값 가져오기
+        if let bgm = myUserDefaults.value(forKey: "bgmIsOn") {
+            bgmIsOn = bgm as! Bool
+        } else {
+            bgmIsOn = true
+        }
+        
         setElements()
+        setAudioPlayer()
     }
     
     // MARK: - IBActions
     @IBAction func musicButtonTapped(_ sender: Any) {
+        if audioPlayer?.isPlaying == true {
+            myUserDefaults.set(false, forKey: "bgmIsOn")
+            // 이미지 수정
+            audioPlayer?.stop()
+        } else {
+            myUserDefaults.set(true, forKey: "bgmIsOn")
+            // 이미지 수정
+            audioPlayer?.play()
+        }
     }
     
     @IBAction func settingButtonTapped(_ sender: Any) {
@@ -83,6 +107,25 @@ class MainViewController: UIViewController {
             buttons[i].layer.shadowRadius = 8
             buttons[i].layer.shadowOpacity = 1.0
             buttons[i].layer.shadowColor = myWhiteColor.cgColor
+        }
+    }
+    
+    /// 오디오 플레이어
+    private func setAudioPlayer() {
+        if let url = bgmUrl {
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.numberOfLoops = -1
+                audioPlayer?.prepareToPlay()
+            } catch {
+                print(error)
+            }
+        }
+        
+        if bgmIsOn == false {
+            
+        } else {
+            audioPlayer?.play()
         }
     }
     
