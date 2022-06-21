@@ -15,6 +15,7 @@
 		C68010D7285F197C00A82B90 /* MySettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68010D6285F197C00A82B90 /* MySettingTableViewCell.swift */; };
 		C68010DD285F282400A82B90 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68010DC285F282400A82B90 /* SettingViewModel.swift */; };
 		C68010DF285F2EAB00A82B90 /* MyEtcSettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68010DE285F2EAB00A82B90 /* MyEtcSettingTableViewCell.swift */; };
+		C68011012861EF2600A82B90 /* BGM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C68011002861EF2600A82B90 /* BGM.mp3 */; };
 		C68121B22852633200F32ECA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C68121B12852633200F32ECA /* Lottie */; };
 		C68121B5285491A800F32ECA /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68121B4285491A800F32ECA /* UIViewExtension.swift */; };
 		C68557222838C03200594C6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68557212838C03200594C6F /* AppDelegate.swift */; };
@@ -48,6 +49,7 @@
 		C68010D6285F197C00A82B90 /* MySettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySettingTableViewCell.swift; sourceTree = "<group>"; };
 		C68010DC285F282400A82B90 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 		C68010DE285F2EAB00A82B90 /* MyEtcSettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEtcSettingTableViewCell.swift; sourceTree = "<group>"; };
+		C68011002861EF2600A82B90 /* BGM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BGM.mp3; sourceTree = "<group>"; };
 		C68121B4285491A800F32ECA /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		C685571E2838C03200594C6F /* paperAirplane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = paperAirplane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C68557212838C03200594C6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 		C68557382838C58600594C6F /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				C68011002861EF2600A82B90 /* BGM.mp3 */,
 				C696E9282854AEE80028EDDD /* lottie */,
 				C685574C2838CD0000594C6F /* Fonts */,
 			);
@@ -311,6 +314,7 @@
 				C618FED1285B5B990048FAE3 /* SettingViewController.storyboard in Resources */,
 				C68557312838C03600594C6F /* LaunchScreen.storyboard in Resources */,
 				C6DCFDC62855DF1E00AF7143 /* GoogleService-Info.plist in Resources */,
+				C68011012861EF2600A82B90 /* BGM.mp3 in Resources */,
 				C61697DB283F8E6400640755 /* CustomAlertViewController.storyboard in Resources */,
 				C685572E2838C03500594C6F /* Assets.xcassets in Resources */,
 				C6E669E1284F713B006A28C9 /* RIDIBatang.otf in Resources */,
