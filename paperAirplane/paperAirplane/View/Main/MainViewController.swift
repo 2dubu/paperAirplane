@@ -12,6 +12,9 @@ import AVFoundation
 class MainViewController: UIViewController {
     
     // MARK: - IBOutlets
+    // 왼쪽 네비게이션 BGM 버튼
+    @IBOutlet weak var musicButton: UIBarButtonItem!
+    
     // 사용자 이름, 보유 연필 수 표시 레이블
     @IBOutlet weak var mainInfoTextLabel: UILabel!
     
@@ -52,11 +55,11 @@ class MainViewController: UIViewController {
     @IBAction func musicButtonTapped(_ sender: Any) {
         if audioPlayer?.isPlaying == true {
             myUserDefaults.set(false, forKey: "bgmIsOn")
-            // 이미지 수정
+            musicButton.image = UIImage(named: "music_off")
             audioPlayer?.stop()
         } else {
             myUserDefaults.set(true, forKey: "bgmIsOn")
-            // 이미지 수정
+            musicButton.image = UIImage(named: "music")
             audioPlayer?.play()
         }
     }
@@ -123,8 +126,9 @@ class MainViewController: UIViewController {
         }
         
         if bgmIsOn == false {
-            
+            musicButton.image = UIImage(named: "music_off")
         } else {
+            musicButton.image = UIImage(named: "music")
             audioPlayer?.play()
         }
     }

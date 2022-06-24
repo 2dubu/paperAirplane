@@ -136,6 +136,7 @@
                         <outlet property="checkPaperAirplaneButton" destination="w5u-9K-sZh" id="82L-Ch-zbo"/>
                         <outlet property="lottieView" destination="byl-wZ-EWH" id="cV5-FX-BT0"/>
                         <outlet property="mainInfoTextLabel" destination="ReX-q5-QNF" id="UME-5Y-sde"/>
+                        <outlet property="musicButton" destination="CSx-k2-ayl" id="qMB-Ow-VBU"/>
                         <outlet property="sendPaperAirplaneButton" destination="DFN-Ss-QSy" id="hfn-zl-ggE"/>
                     </connections>
                 </viewController>
