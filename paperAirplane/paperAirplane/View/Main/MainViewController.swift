@@ -40,7 +40,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         self.view.setGradient(colors: mainGradientColor)
         
-        // userDefault값 가져오기
+        // userDefault값 가져온 후 bgm 재생
         if let bgm = myUserDefaults.value(forKey: "bgmIsOn") {
             bgmIsOn = bgm as! Bool
         } else {
