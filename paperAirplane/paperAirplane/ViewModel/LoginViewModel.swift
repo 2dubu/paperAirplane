@@ -5,7 +5,6 @@
 //  Created by 이건우 on 2022/06/12.
 //
 
-import Foundation
 import UIKit
 import Firebase
 import GoogleSignIn
