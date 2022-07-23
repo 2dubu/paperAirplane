@@ -8,9 +8,10 @@
 import Foundation
 import UIKit
 
+/// Custom Alert의 버튼의 액션을 처리하는 Delegate입니다.
 protocol CustomAlertDelegate {
-    func action()
-    func exit()
+    func action()   // confirm button event
+    func exit()     // cancel button event
 }
 
 extension CustomAlertDelegate where Self: UIViewController {
