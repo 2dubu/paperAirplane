@@ -33,6 +33,8 @@
 		C696E92A2854AEF50028EDDD /* paperplane.json in Resources */ = {isa = PBXBuildFile; fileRef = C696E9292854AEF50028EDDD /* paperplane.json */; };
 		C696E92D2854B8270028EDDD /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C696E92C2854B8270028EDDD /* LoginViewController.storyboard */; };
 		C696E92F2854B8350028EDDD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C696E92E2854B8350028EDDD /* LoginViewController.swift */; };
+		C6BEB0BB288D0866004420EB /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEB0BA288D0866004420EB /* UIApplicationExtension.swift */; };
+		C6C53D9D288CFAC600BB6F98 /* NetworkCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C53D9C288CFAC600BB6F98 /* NetworkCheck.swift */; };
 		C6DCFDC62855DF1E00AF7143 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6DCFDC52855DF1D00AF7143 /* GoogleService-Info.plist */; };
 		C6DCFDC92855E04500AF7143 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C6DCFDC82855E04500AF7143 /* FirebaseAuth */; };
 		C6DCFDEF2855ED0F00AF7143 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = C6DCFDEE2855ED0F00AF7143 /* GoogleSignIn */; };
@@ -69,6 +71,8 @@
 		C696E9292854AEF50028EDDD /* paperplane.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = paperplane.json; sourceTree = "<group>"; };
 		C696E92C2854B8270028EDDD /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		C696E92E2854B8350028EDDD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C6BEB0BA288D0866004420EB /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		C6C53D9C288CFAC600BB6F98 /* NetworkCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCheck.swift; sourceTree = "<group>"; };
 		C6DCFDC52855DF1D00AF7143 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C6DCFDF12855F61D00AF7143 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +116,7 @@
 				C68557482838C90900594C6F /* UITextFieldExtension.swift */,
 				C68121B4285491A800F32ECA /* UIViewExtension.swift */,
 				C60D243B2854BB4600B5C747 /* UIViewControllerExtension.swift */,
+				C6BEB0BA288D0866004420EB /* UIApplicationExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 			children = (
 				C68557212838C03200594C6F /* AppDelegate.swift */,
 				C68557232838C03200594C6F /* SceneDelegate.swift */,
+				C685573F2838C61D00594C6F /* Constants.swift */,
 				C68557382838C58600594C6F /* Resource */,
 				C685573C2838C5BD00594C6F /* Helpers */,
 				C68557392838C59700594C6F /* Model */,
@@ -183,8 +189,8 @@
 		C685573C2838C5BD00594C6F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				C685573F2838C61D00594C6F /* Constants.swift */,
 				C68557442838C7B400594C6F /* DeviceConfig.swift */,
+				C6C53D9C288CFAC600BB6F98 /* NetworkCheck.swift */,
 				C68121B32854918700F32ECA /* Extension */,
 			);
 			path = Helpers;
@@ -333,6 +339,7 @@
 			files = (
 				C68557492838C90900594C6F /* UITextFieldExtension.swift in Sources */,
 				C68010DD285F282400A82B90 /* SettingViewModel.swift in Sources */,
+				C6BEB0BB288D0866004420EB /* UIApplicationExtension.swift in Sources */,
 				C68557402838C61D00594C6F /* Constants.swift in Sources */,
 				C68557452838C7B400594C6F /* DeviceConfig.swift in Sources */,
 				C68557262838C03200594C6F /* MainViewController.swift in Sources */,
@@ -347,6 +354,7 @@
 				C685572C2838C03200594C6F /* paperAirplane.xcdatamodeld in Sources */,
 				C696E92F2854B8350028EDDD /* LoginViewController.swift in Sources */,
 				C60D243C2854BB4600B5C747 /* UIViewControllerExtension.swift in Sources */,
+				C6C53D9D288CFAC600BB6F98 /* NetworkCheck.swift in Sources */,
 				C68557242838C03200594C6F /* SceneDelegate.swift in Sources */,
 				C68010DF285F2EAB00A82B90 /* MyEtcSettingTableViewCell.swift in Sources */,
 			);

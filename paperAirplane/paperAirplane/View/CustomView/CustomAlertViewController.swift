@@ -31,8 +31,8 @@ extension CustomAlertDelegate where Self: UIViewController {
         customAlertViewController.modalTransitionStyle = .crossDissolve
         customAlertViewController.alertText = alertText
         customAlertViewController.alertType = alertType
-        customAlertViewController.cancelButtonName = cancelButtonText ?? ""
-        customAlertViewController.confirmButtonName = confirmButtonText
+        customAlertViewController.cancelButtonText = cancelButtonText ?? ""
+        customAlertViewController.confirmButtonText = confirmButtonText
         
         self.present(customAlertViewController, animated: true, completion: nil)
     }
@@ -55,8 +55,8 @@ class CustomAlertViewController: UIViewController {
     var delegate: CustomAlertDelegate?
     
     var alertText = ""
-    var cancelButtonName = ""
-    var confirmButtonName = ""
+    var cancelButtonText = ""
+    var confirmButtonText = ""
     var confirmButtonCompletionClosure: (() -> Void)?
     
     override func viewDidLoad() {
@@ -71,16 +71,16 @@ class CustomAlertViewController: UIViewController {
             cancelButton.isHidden = true
             
             confirmButton.isHidden = false
-            confirmButton.setTitle(confirmButtonName, for: .normal)
+            confirmButton.setTitle(confirmButtonText, for: .normal)
             confirmButton.widthAnchor.constraint(equalTo: alertView.widthAnchor, multiplier: 1).isActive = true
             
         case .canCancel:
             
             cancelButton.isHidden = false
-            cancelButton.setTitle(cancelButtonName, for: .normal)
+            cancelButton.setTitle(cancelButtonText, for: .normal)
             
             confirmButton.isHidden = false
-            confirmButton.setTitle(confirmButtonName, for: .normal)
+            confirmButton.setTitle(confirmButtonText, for: .normal)
             confirmButton.layer.maskedCorners = CACornerMask.layerMaxXMaxYCorner
             confirmButton.widthAnchor.constraint(equalTo: alertView.widthAnchor, multiplier: 0.5).isActive = true
         }

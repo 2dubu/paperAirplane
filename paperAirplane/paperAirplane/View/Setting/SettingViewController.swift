@@ -95,7 +95,7 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
     
     // 기종의 노치 여부에 따라 설정 셀 크기 조절
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if hasNotch {
+        if DeviceManager.shared.hasNotch {
             return view.frame.height / 13
         } else {
             return view.frame.height / 12

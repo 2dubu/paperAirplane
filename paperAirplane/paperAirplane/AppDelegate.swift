@@ -19,8 +19,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
+        sleep(1)
+        
+        // NavigationBar tint color 설정
         UINavigationBar.appearance().tintColor = myWhiteColor
+        
+        // Firebase 초기화
         FirebaseApp.configure()
+        
+        // 네트워크 연결 확인
+        NetworkCheck.shared.startMonitoring()
         return true
     }
     
