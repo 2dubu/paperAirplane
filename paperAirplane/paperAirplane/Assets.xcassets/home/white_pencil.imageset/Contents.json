@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "music_off.png",
+      "filename" : "white_pencil.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "music_off@2x.png",
+      "filename" : "white_pencil@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "music_off@3x.png",
+      "filename" : "white_pencil@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
